@@ -14,7 +14,7 @@ math.config({
 })
 
 # n is how many iterations you want
-quadraticPi = (n) ->
+quartic = (n) ->
 	a = math.eval '2(sqrt(2) - 1)^2'
 	y = math.eval 'sqrt(2) - 1'
 
@@ -26,8 +26,8 @@ quadraticPi = (n) ->
 
 # Export the function
 if typeof module is 'object' and module.exports
-	module.exports = quadraticPi
+	module.exports = quartic
 else if window
-	window.quadraticPi = quadraticPi
+	window.quartic = quartic
 else if typeof define is 'function' and define.amd
-	define [], -> quadraticPi
+	define [], -> quartic

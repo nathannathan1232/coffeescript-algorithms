@@ -37,3 +37,4 @@ else if window
 	window.borwein = borwein
 else if typeof define is 'function' and define.amd
 	define [], -> borwein
+	
