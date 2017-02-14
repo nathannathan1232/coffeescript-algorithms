@@ -26,9 +26,6 @@ operation_order =
 	'*': 4, '/': 4, '%': 4
 	'+': 3, '-': 3
 
-find_order = (o) ->
-	operation_order.indexOf o
-
 parse = (input) ->
 	input = input.split ' '
 
